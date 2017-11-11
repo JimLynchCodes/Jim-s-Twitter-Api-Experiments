@@ -1,14 +1,25 @@
-var Twit = require('twit');
-var config = require('./config');
+const Twit = require('twit');
+const config = require('./config');
 
-console.log('config ' + config );
 
-console.dir(config);
+const T = new Twit(config);
 
-var T = new Twit(config);
-
-T.get('search/tweets', { q: 'banana since:2011-07-11', count: 100 }, function(err, data, response) {
+T.get('search/tweets', { q: 'clojure since:2011-11-11 lang:en', count: 100 }, function(err, data, response) {
     console.log(data)
+
+    console.log('tweets found: ' + data.statuses.length);
+    console.log('first tweet: ' +  data.statuses[0]);
+    console.log('first tweet: ' +  data.statuses[0].id);
+
+    T.post('favorites/create/:id', { "id": data.statuses[0].id_str }, function (err, data, response) {
+        console.log(data);
+        // console.log(err);
+        // console.log(response);
+    })
+
+    //TODO For some reason this is always returning: { errors: [ { message: 'Sorry, that page does not exist', code: 34 } ] }
+    //TODO Follow up with github issue about this: https://github.com/ttezel/twit/issues/393
+
 });
 
 
