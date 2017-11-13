@@ -1,2 +1,5 @@
-./js_search/config.js
+js_twit/config.js
 .idea/
+node_modules/
+./config.js
+./lambda-twitter-bot/lambda-twitter-bot/config.js

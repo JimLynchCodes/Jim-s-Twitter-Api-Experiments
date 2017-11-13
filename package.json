@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./js_search/index.js",
+    "npm start-js-twit": "node ./js_search/index.js",
+    "npm start-like-bot": "node ./js_twitter/like-bot.js",
+    "npm retweet-bot": "node ./js_twitter/retweet-bot.js",
+    "npm fav-bot": "node ./js_twitter/fav-bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +21,9 @@
   },
   "homepage": "https://github.com/JimTheMan/Jim-s-Twitter-Api-Experiments#readme",
   "dependencies": {
-    "twit": "^2.2.9"
+    "axios": "^0.17.0",
+    "twit": "^2.2.9",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1"
