@@ -20,12 +20,12 @@ module.exports.beginFavBot = function () {
 
 beginFavBot = function (resolve) {
     const params = {
-        q: config.hastags,
+        q: config.hastags.join(" OR "),
         result_type: 'recent',
         lang: 'en'
     };
 
-    console.log('searching for tweets about ' + config.hastags + '...');
+    console.log('searching for tweets about ' + config.hastags.join(" OR ") + '...');
 
     Twitter.get('search/tweets', params, function (err, data) {
         const tweet = data.statuses;
@@ -60,7 +60,7 @@ likeTweetUntilSuccess = function (tweetId, resolve) {
         }
         else {
             console.log(response);
-            console.log('Like failures: ', likeFails);
+            console.log('Like failures: ', likeFails.length);
             console.log('Success!!! Favorited ' + tweetId);
             attemptToRetweet(tweetId, resolve);
         }

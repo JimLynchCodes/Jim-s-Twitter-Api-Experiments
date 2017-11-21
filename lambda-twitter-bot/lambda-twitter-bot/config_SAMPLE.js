@@ -5,3 +5,5 @@ module.exports = {
     access_token_secret:  '...',
     timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 };
+
+module.exports.hastags = [ "clojurescript", "clojure", "clojurian", "cljs" ];

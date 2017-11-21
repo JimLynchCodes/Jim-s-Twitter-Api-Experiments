@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cf699a9-1918-4130-98c3-1e5f043f4bba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/twitter-promise-wrapper-test.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js_twitter/fav-bot.js" afterPath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/fav-bot.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/handler.js" afterPath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/old_handler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config.js" afterPath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/promise-based-twitter-bot.js" afterPath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/promise-based-twitter-bot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config_SAMPLE.js" afterPath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config_SAMPLE.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/fav-bot.js" afterPath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/fav-bot.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +23,7 @@
     <favorites_list name="Jim-s-Twitter-Api-Experiments" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.7275449">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="retweet-bot.js" pinned="false" current-in-tab="false">
@@ -36,16 +31,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="330">
                   <caret line="30" column="17" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="35" selection-end-column="15" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
                   <folding />
                 </state>
               </provider>
@@ -115,7 +100,17 @@
             <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="105">
-                  <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="22" />
+                  <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="77" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="config_SAMPLE.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config_SAMPLE.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
                   <folding />
                 </state>
               </provider>
@@ -124,8 +119,8 @@
           <file leaf-file-name="fav-bot.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/fav-bot.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                <state relative-caret-position="675">
+                  <caret line="63" column="59" lean-forward="true" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
                   <folding />
                 </state>
               </provider>
@@ -139,7 +134,7 @@
             <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/index.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
-                  <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+                  <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -187,11 +182,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js_twitter/fav-bot.js" />
         <option value="$PROJECT_DIR$/g.js" />
-        <option value="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config.js" />
         <option value="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/twitter-promise-wrapper-test.js" />
         <option value="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/promise-based-twitter-bot.js" />
-        <option value="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/fav-bot.js" />
         <option value="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/handler.js" />
+        <option value="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config.js" />
+        <option value="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config_SAMPLE.js" />
+        <option value="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/fav-bot.js" />
       </list>
     </option>
   </component>
@@ -407,12 +403,12 @@
       <workItem from="1509941444488" duration="2644000" />
       <workItem from="1509946318255" duration="199000" />
       <workItem from="1510424867473" duration="8426000" />
-      <workItem from="1511051264079" duration="6538000" />
+      <workItem from="1511051264079" duration="7618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17807000" />
+    <option name="totallyTimeSpent" value="18887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="49" width="1317" height="945" extended-state="0" />
@@ -637,7 +633,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -662,14 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-311">
           <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -706,18 +694,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/fav-bot.js">
+    <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/index.js">
+    <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config_SAMPLE.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="120">
+          <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/fav-bot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="63" column="59" lean-forward="true" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
           <folding />
         </state>
       </provider>
