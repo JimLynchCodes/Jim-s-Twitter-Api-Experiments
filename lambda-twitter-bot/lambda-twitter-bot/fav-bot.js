@@ -19,8 +19,12 @@ module.exports.beginFavBot = function () {
 
 
 beginFavBot = function (resolve) {
+
+
+    var query = config.hastags.join(" OR ") + '-"For Sale"';
+    console.log('queryL ' + query);
     const params = {
-        q: config.hastags.join(" OR "),
+        q: query,
         result_type: 'recent',
         lang: 'en'
     };
