@@ -3,5 +3,5 @@ js_twit/config.js
 node_modules/
 config.js
 louie-bot/louie-bot-creds.js
-louie-bot/.serverless
+louie-bot/.serverless/
 lambda-twitter-bot/lambda-twitter-bot/config.js
