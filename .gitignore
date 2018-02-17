@@ -2,4 +2,6 @@ js_twit/config.js
 .idea/
 node_modules/
 config.js
+louie-bot/louie-bot-creds.js
+louie-bot/.serverless
 lambda-twitter-bot/lambda-twitter-bot/config.js
