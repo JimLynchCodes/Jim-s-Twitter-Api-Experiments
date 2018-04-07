@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cf699a9-1918-4130-98c3-1e5f043f4bba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/louie-bot/.serverless/louie-bot.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/louie-bot/.serverless/cloudformation-template-create-stack.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/louie-bot/.serverless/cloudformation-template-update-stack.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/louie-bot/.serverless/serverless-state.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/louie-bot/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/louie-bot/louie-bot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/louie-bot/louie-liker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/louie-bot/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/louie-bot/serverless.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/package.json" afterPath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/promise-based-twitter-bot.js" afterPath="$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/promise-based-twitter-bot.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -90,8 +78,8 @@
           <file leaf-file-name="serverless.yml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/serverless.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="71">
-                  <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+                <state relative-caret-position="561">
+                  <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -206,7 +194,7 @@
     <option name="x" value="192" />
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="985" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -423,15 +411,15 @@
       <workItem from="1511051264079" duration="8726000" />
       <workItem from="1512872114497" duration="596000" />
       <workItem from="1513574319433" duration="490000" />
-      <workItem from="1518895697926" duration="525000" />
+      <workItem from="1518895697926" duration="1390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21606000" />
+    <option name="totallyTimeSpent" value="22471000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="192" y="23" width="1680" height="985" extended-state="0" />
+    <frame x="192" y="23" width="1680" height="984" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -814,8 +802,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lambda-twitter-bot/lambda-twitter-bot/serverless.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="561">
+          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
           <folding />
         </state>
       </provider>
