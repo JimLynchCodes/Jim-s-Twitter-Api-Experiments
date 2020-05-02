@@ -36,8 +36,8 @@ const retweet = function () {
                 console.log(JSON.stringify(data.statuses[3]));
 
 
-                const retweetId = data.statuses[0].id_str;
-                console.log('post id was: ' + retweetId);
+                // const retweetId = data.statuses[0].id_str;
+                // console.log('post id was: ' + retweetId);
 
                 // Twitter.post('favorites/create', {
                 //     id: retweetId

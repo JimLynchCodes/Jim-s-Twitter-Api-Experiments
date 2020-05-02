@@ -3,14 +3,12 @@ const config = require('./../config.js');
 
 const Twitter = new twit(config);
 
-const like = function () {
+const follow = function () {
     const params = {
         q: '#Clojurescript, #Clojure',  // REQUIRED
         result_type: 'recent',
         lang: 'en'
     };
-    // for more parametes, see: https://dev.twitter.com/rest/reference/get/search/tweets
-
 
     Twitter.get('account/verify_credentials', function (err, data) {
 
@@ -24,20 +22,21 @@ const like = function () {
             if (!err) {
                 console.log(data.statuses.length + ' matching posts found.');
                 const rand = Math.floor(Math.random() * data.statuses.length);
+                
                 console.log('rand was: ' + rand);
 
 
                 console.log(data.statuses[rand]);
 
 
-                const likeId = data.statuses[rand].id_str;
-                console.log('post id was: ' + likeId);
+                const followId = data.statuses[rand].user.id_str;
+                console.log('user id was: ' + followId);
 
-                Twitter.post('favorites/create', {
-                    id: likeId
+                Twitter.post('friendships/create', {
+                    user_id: followId
                 }, function (err, response) {
                     if (response) {
-                        console.log('Liked ' + likeId + '!');
+                        console.log('Followed! ' + followId + '!');
                     }
                     if (err) {
                         console.log('Something went wrong while LIKING... Duplication maybe...');
@@ -53,4 +52,4 @@ const like = function () {
     });
 };
 
-like();
+follow();
