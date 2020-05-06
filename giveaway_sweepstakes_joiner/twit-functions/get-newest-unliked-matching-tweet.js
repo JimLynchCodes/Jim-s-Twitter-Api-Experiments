@@ -11,10 +11,10 @@ const getNewestUnlikedMatchingTweet = (Twitter, keywords) => {
 
     return new Promise((resolve, reject) => {
 
-        const eitherCommandLineOrConfigKeywords = keywords ? keywords : config.keywords
+        // const eitherCommandLineOrConfigKeywords = keywords ? keywords : config.keywords
 
         const params = {
-            q: eitherCommandLineOrConfigKeywords + ' -filter:retweets',
+            q: keywords + ' -filter:retweets',
             result_type: 'recent',
             lang: 'en',
             count: 100,

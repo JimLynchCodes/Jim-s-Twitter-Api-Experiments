@@ -1,12 +1,12 @@
 'use strict';
-const giveawayJoiner = require('./giveaway-joiner');
+const joinGiveaway = require('./giveaway-joiner');
 const logger = require('./logger')
 
 logger.info('Starting the Giveaway Joiner index!');
 
 const main = async () => {
 
-    const result = await giveawayJoiner.joinGiveaway()
+    const result = await joinGiveaway()
 
     logger.info('Giveaway Joiner has completed successfully!')
 
