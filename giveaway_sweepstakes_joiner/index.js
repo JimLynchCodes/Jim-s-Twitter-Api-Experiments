@@ -2,13 +2,23 @@
 const joinGiveaway = require('./giveaway-joiner');
 const logger = require('./logger')
 
-logger.info('Starting the Giveaway Joiner index!');
-
 const main = async () => {
+
+    const quietFlag = process.argv.slice(2).find(arg => arg.includes('--quiet'))
+
+    console.log('quiet flag: ' + quietFlag)
+    if (quietFlag) {
+        logger.info('Starting in quiet mode...')
+        logger.pause()
+    }
+
+    else
+        logger.info('Starting Twitter Engager!')
 
     const result = await joinGiveaway()
 
-    logger.info('Giveaway Joiner has completed successfully!')
+
+    logger.info('Twitter Engager has completed successfully!')
 
     const memUsage = process.memoryUsage()
 
@@ -17,5 +27,5 @@ const main = async () => {
 }
 
 main().catch(err => {
-    logger.error(err)
+    logger.error('Any errors: ' + err)
 })

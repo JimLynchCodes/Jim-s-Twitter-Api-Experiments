@@ -1,3 +1,5 @@
+const logger = require('./../logger')
+
 const like = (Twitter, tweetId) => {
 
     return new Promise((resolve, reject) => {
@@ -7,11 +9,11 @@ const like = (Twitter, tweetId) => {
         }, (err, response) => {
 
             if (err) {
-                console.log('Something went wrong while LIKING... ', err)
+                logger.info('Something went wrong while LIKING... ' + err)
                 reject(err)
             }
 
-            console.log('Liked ' + tweetId + '!')
+            logger.info('Liked ' + tweetId + '!')
             resolve(response)
         });
 

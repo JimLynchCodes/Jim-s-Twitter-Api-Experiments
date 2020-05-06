@@ -22,7 +22,6 @@ module.exports = joinGiveaway = () => {
 
             const args = process.argv.slice(2)
 
-
             const keywords = getArgValues(args, KEYWORDS_FLAG) || config.keywords
             const minWaitTime = parseInt(getArgValues(args, MIN_WAIT_TIME_FLAG) || config.minWaitTime)
             const maxWaitTime = parseInt(getArgValues(args, MAX_WAIT_TIME_FLAG) || config.maxWaitTime)
@@ -52,13 +51,13 @@ module.exports = joinGiveaway = () => {
 
             const tweeterId = tweet.user.id_str
             logger.info(`User who tweeted id: https://twitter.com/intent/user?user_id=${tweeterId}`)
-            logger.info(`https://twitter.com/_/status/${tweetId}`)
+            logger.info(`Tweet: https://twitter.com/_/status/${tweetId}`)
 
             const waitTimeUntilRetweet = getRandomTimeWithinBounds(minWaitTime, maxWaitTime)
             const additionalWaitTimeUntilFollow = getRandomTimeWithinBounds(minWaitTime, maxWaitTime)
 
             if (noLikesArg)
-                logger.info('NOT liking!')
+                logger.info('NOT liking because --no-like flag was found.')
 
             else {
                 logger.info(`liking tweet: ${tweetId}`)
@@ -68,7 +67,7 @@ module.exports = joinGiveaway = () => {
             setTimeout(async () => {
 
                 if (noRetweetArg)
-                    logger.info('NOT retweeting!')
+                    logger.info('NOT retweeting because --no-retweet flag was found.')
 
                 else {
                     logger.info(`retweeting tweet: ${tweetId}`)
@@ -78,7 +77,7 @@ module.exports = joinGiveaway = () => {
                 setTimeout(async () => {
 
                     if (noFollowArg)
-                        logger.info('NOT following!')
+                        logger.info('NOT following because --no-follow flag was found.')
 
                     else {
                         logger.info(`following tweeter: ${tweeterId}`)
@@ -118,7 +117,7 @@ const getRandomTimeWithinBounds = (min, max) => {
 
     const time = Math.floor(min + Math.random() * (max - min))
 
-    console.log('time: ', time)
+    logger.info('time: ', time)
 
     logger.info('Calculated random amount of time within bounds: ' + time)
 

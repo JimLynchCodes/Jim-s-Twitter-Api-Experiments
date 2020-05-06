@@ -1,21 +1,22 @@
+const logger = require('./../logger')
 
 const retweetTweet = (Twitter, tweetId) => {
 
     return new Promise((resolve, reject) => {
 
-        console.log('Retweeting tweet!', tweetId)
+        logger.info('Retweeting tweet!' + tweetId)
 
         Twitter.post('statuses/retweet/:id', {
             id: tweetId
         }, (err, response) => {
             if (err) {
-                console.log(' Error retweeting: ' , err) 
+                logger.info(' Error retweeting: ' + err)
                 reject(err)
             }
-                console.log('Retweeted tweet!');
-                resolve(response)
+            logger.info('Retweeted tweet!')
+            resolve(response)
         })
-        
+
     })
 }
 
